@@ -1,0 +1,107 @@
+/* @font-face{
+    font-family: "Bold";
+    src: url("../font/LXGWWenKaiLite-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Regular";
+    src: url("../font/LXGWWenKaiLite-Regular.ttf");
+}
+
+* {
+    font-family: "Regular";
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, h3 a, li a, div span, .btn {
+    font-family: "Bold";
+	font-weight: normal;
+} */
+
+a {
+    text-decoration: none;
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none; /* 默认隐藏弹窗 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+}
+
+.modal-content {
+    display: flex;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 400px;
+}
+
+.close {
+    color: gray;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.qrcode {
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+}
+
+.info {
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: 16px;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+.container p {
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 5px 0;
+}
+
+/* .header .blog-name {
+	font-weight: normal;
+}
+
+.nav-link {
+	font-size: 16px;
+	font-weight: normal;
+} */
+
+.image {
+    max-width: 100%;
+    margin-top: 10px;
+}
