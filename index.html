@@ -1,98 +1,103 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>琴书地理阁</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Template">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-	<meta name="baidu-site-verification" content="codeva-tiIHJGdpYJ" />
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-	<!-- FontAwesome JS-->
-	<script src="assets/js/html.js"></script>
-	<script defer src="assets/js/all.min.js"></script>
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
-    <link rel="stylesheet" href="assets/css/html.css">
-</head> 
-
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    
-    <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0">琴书地理阁</h1>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <span href="#" class="logo-text">姜颢睿</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#portfolio">作品</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column">
-				<div class="profile-section pt-3 pt-lg-0">
-				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.jpg" alt="profile">			
-					
-					<div class="bio mb-3">
-						<span style="font-weight: bold; font-size: 16px; line-height: 30px;">个人主页</span>
-					</div><!--//bio-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="heading">朝碧海而暮苍梧</h1>
+            <span class="heading_underline"></span>
+            <p class="heading_info">/* 这里是姜颢睿的个人主页 */</p>
+        </div>
+        <div class="photo-credit">图片拍摄地点：秦皇岛祖山风景区</div>
+        <div class="scroll-down" onclick="scrollToAbout()">
+            <div class="arrow"></div>
+        </div>
+    </section>
 
-			        <hr> 
-				</div><!--//profile-section-->
-				
-				<div class="my-2 my-md-3">
-					<button class="btn btn-primary" onclick="openModal()">微信公众号</button>
+    <section id="about">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="profile-tags">
+                <span class="tag">地理学</span>
+                <span class="tag">研究生</span>
+                <span class="tag">独立开发者</span>
+            </div>
+            <div class="bio">
+                <p>目前为 <strong>地理学</strong> 专业在读研究生，本科专业为 <strong>地理信息科学</strong>。</p>
+                <p>个人推文内容主要存储于
+                    <a href="https://img.picui.cn/free/2025/02/23/67bb01437f5e8.jpg" target="_blank">微信公众号</a>
+                    及 <a href="https://www.cnblogs.com/qsgeo" target="_blank">博客园</a> 中，
+                    其内容包括但不限于地理数据获取与处理、地图制图、空间分析、代码编写等方面，未来还可能涉及到地理学其他各个方向的内容。</p>
+            </div>
+        </div>
+    </section>
 
-					<!-- 弹窗内容 -->
-					<div id="myModal" class="modal">
-						<div class="modal-content">
-							<div style="flex-direction: row-reverse; margin-bottom: 10px;">
-								<span class="close" onclick="closeModal()">&times;</span>
-							</div>
-							
-							<div style="flex-direction: column;">
-								<img class="qrcode" src="assets/images/qrcode.jpg" alt="qrcode">
-								<p class="info">微信公众号：琴书地理阁</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</nav>
-    </header>
-    
-    <div class="main-wrapper">
-	    <section class="blog-list px-3 py-5 p-md-5">
-		    <div class="container">
-				<h2>关于本人</h2>
-				<p>目前为地理学专业在读研究生，本科专业为地理信息科学。</p>
-			    <p>个人推文内容主要存储于<a href="#" onclick="openModal()">微信公众号</a>及<a href="https://www.cnblogs.com/qsgeo/">博客园</a>中，其内容包括但不限于地理数据获取与处理、地图制图、空间分析、代码编写等方面，未来还可能涉及到地理学其他各个方向的内容。</p>
-				
-				<h2>联系方式</h2>
-			    <h5>1.&ensp;个人微信号：jianghr0321</h5>
-			    <p>请在添加时于【发送添加好友申请】部分注明【琴书地理阁】、【QSGeo】或自我介绍，或者通过其他渠道提前联系我，如果没有类似可说明身份的备注或者没有提前联系过的话大概率不会被通过。</p>
-			    
-				<h5>2.&ensp;邮箱：jianghr0321@163.com</h5>
-			    <p>发送邮件时，请一定要有简单的自我介绍，并说明联系我的原因，如果是关于我的某篇文章一定要有原文标题或链接，并具体说明存在的问题或建议，以便于我去查找和改正，我会尽可能在收到邮件后两天内回复。</p>
-				
-				<img class="image" src="assets/images/garden.png" alt="garden">
-			</div>
-	    </section>
-	    
-	    <footer class="footer text-center py-2 theme-bg-dark">
-            <small class="copyright">网页模板参考：<a href="http://www.mobanwang.com" target="_blank">模板王</a></small>
-	    </footer>
-    
-    </div><!--//main-wrapper-->
-    
-       
-    <!-- Javascript -->
-	<script src="assets/js/popper.min.js"></script> 
-    <script src="assets/js/bootstrap.min.js"></script>
+    <section id="portfolio">
+        <h2 class="section-title">精选作品</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-image">
+                    <img src="images/geological-atlas.png" alt="中国地质图集">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">《中国地质图集》重构网页版</h3>
+                    <p class="card-description">基于《中国地质图集》原始电子文档进行重构，修复原始程序运行问题，优化网页界面及内容。</p>
+                    <div class="card-tech">
+                        <span class="tech-tag">html</span>
+                        <span class="tech-tag">jQuery</span>
+                    </div>
+                    <a href="https://geological-atlas.netlify.app/" class="card-link" target="_blank">查看项目 →</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="card-image">
+                    <img src="images/rss2web.png" alt="rss2web">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">RSS 信息聚合系统</h3>
+                    <p class="card-description">自动根据 RSS 抓取并解析期刊论文信息，自动翻译英文标题，构建双语知识库，并提供实时检索功能。</p>
+                    <div class="card-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">glm-4-plus</span>
+                    </div>
+                    <a href="https://gitee.com/Haorui-Jiang/rss2web" class="card-link" target="_blank">查看项目 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">联系方式</h2>
+        <div class="about-content">
+            <div class="bio">
+                <p><strong>微信：</strong>jianghr0321</p>
+                <p>请在添加时于【发送添加好友申请】部分注明【琴书地理阁】、【QSGeo】或自我介绍，或者通过其他渠道提前联系我，如果没有类似可说明身份的备注或者没有提前联系过的话大概率不会被通过。</p>
+                <p><strong>邮箱：</strong>jianghr0321@163.com</p>
+                <p>发送邮件时，请一定要有简单的自我介绍，并说明联系我的原因，如果是关于我的某篇文章一定要有原文标题或链接，并具体说明存在的问题或建议，以便于我去查找和改正，我会尽可能在收到邮件后两天内回复。</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
-</html> 
-
+</html>
