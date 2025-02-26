@@ -1,3 +1,3 @@
-# Haorui-Jiang.github.io
+# Haorui-Jiang
 
 Welcome my Personal Website!
