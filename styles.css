@@ -85,14 +85,6 @@ body {
     color: var(--primary-color);
 }
 
-.heading_underline {
-    display: inline-block;
-    width: 70px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--secondary-color);
-}
-
 .heading_info {
     font-size: 18px;
     margin-top: 20px;
